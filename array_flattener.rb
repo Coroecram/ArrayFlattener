@@ -7,5 +7,6 @@ def array_flattener(array)
        array_flattener(element).each { |element| result << element }
      end
   end
+  
   result
 end
