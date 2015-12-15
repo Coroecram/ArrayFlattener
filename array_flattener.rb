@@ -4,8 +4,7 @@ def array_flattener(array)
      unless element.is_a? Array
        result << element
      else
-       nested = array_flattener(element)
-       nested.each { |element| result << element }
+       array_flattener(element).each { |element| result << element }
      end
   end
   result
